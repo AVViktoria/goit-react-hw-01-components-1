@@ -1,6 +1,7 @@
 import { React } from 'react';
 import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
+import { FaRegSmile } from 'react-icons/fa';
 
 export default function Friends({ friends }) {
   return (
@@ -9,7 +10,13 @@ export default function Friends({ friends }) {
         {friends.map(({ id, isOnline, name, avatar }) => {
           return (
             <li key={id} className={css.item}>
-              <span className={css.status}>{isOnline}</span>
+              <span>
+                <FaRegSmile
+                  className={isOnline ? css.status__true : css.status__false}
+                  size={18}
+                />
+              </span>
+
               <img
                 className={css.avatar}
                 src={avatar}

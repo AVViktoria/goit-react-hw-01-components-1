@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'; // ES6
 // var PropTypes = require("prop-types"); // ES5 with npm
 import defaultImage from './default-avatar.jpg';
 import css from './Profile.module.css';
+import { TbAt } from 'react-icons/tb';
 
 export default function Profile({
   avatar = defaultImage,
@@ -16,7 +17,10 @@ export default function Profile({
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.name}>{username}</p>
-        <p className={css.tag}> @{tag}</p>
+        <p className={css.tag}>
+          <TbAt className={css.iconEmail} />
+          {tag}
+        </p>
         <p className={css.location}>{location}</p>
       </div>
       <ul className={css.stats}>

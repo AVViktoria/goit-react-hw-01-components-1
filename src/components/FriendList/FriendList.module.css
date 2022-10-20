@@ -1,0 +1,19 @@
+.status {
+  display: block;
+
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+}
+
+.status__true {
+  background-color: #74ee7e;
+  border-radius: 50%;
+}
+
+.status__false {
+  background-color: #f24343;
+  border-radius: 50%;
+}

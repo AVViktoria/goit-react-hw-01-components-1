@@ -15,7 +15,7 @@ import transactions from '../DATA/transactions.json';
 export default function App() {
   return (
     //* дерево
-    <div>
+    <>
       <div>
         <Profile
           username={user.username}
@@ -40,6 +40,6 @@ export default function App() {
       <div>
         <TransactionHistory items={transactions} />
       </div>
-    </div>
+    </>
   );
 }
