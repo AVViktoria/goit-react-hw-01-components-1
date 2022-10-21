@@ -1,7 +1,8 @@
 .statistics {
-  background-color: #ccc;
+  background-color: rgb(226, 226, 226);
   padding: 10px;
   width: 400px;
+  border-radius: 10px;
 }
 .title {
   display: flex;
