@@ -36,7 +36,7 @@ export default function Friends({ friends }) {
 Friends.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
-      isOnline: PropTypes.string,
+      isOnline: PropTypes.bool,
       name: PropTypes.string,
       avatar: PropTypes.string,
     }).isRequired
