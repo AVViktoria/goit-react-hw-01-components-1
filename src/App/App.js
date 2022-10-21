@@ -19,7 +19,7 @@ export default function App() {
   return (
     //* дерево
     <>
-      <Section title={'Task-1"Statistics"'}>
+      <Section title={'Task-1 "Profile"'}>
         <div>
           <Profile
             username={user.username}
@@ -40,7 +40,7 @@ export default function App() {
         </div>
       </Section>
 
-      <Section title={'Task-3 ""'}>
+      <Section title={'Task-3 "Statistics"'}>
         <div>
           <FriendList friends={friends} />
         </div>

@@ -26,20 +26,22 @@ export default function Profile({
         </p>
         <p className={css.location}>{location}</p>
       </div>
-      <ul className={css.stats}>
-        <li>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
-      </ul>
+      <div className={css.statsContainer}>
+        <ul className={css.stats}>
+          <li className={css.list}>
+            <span className={css.label}>Followers</span>
+            <span className={css.quantity}>{followers}</span>
+          </li>
+          <li className={css.list}>
+            <span className={css.label}>Views</span>
+            <span className={css.quantity}>{views}</span>
+          </li>
+          <li className={css.list}>
+            <span className={css.label}>Likes</span>
+            <span className={css.quantity}>{likes}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
