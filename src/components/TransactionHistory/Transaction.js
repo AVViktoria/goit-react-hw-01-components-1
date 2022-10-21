@@ -5,18 +5,22 @@ import css from './Transaction.module.css';
 export default function Transaction({ items }) {
   return (
     <table className={css.transactionHistory}>
-      <thead>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+      <thead className={css.mainThead}>
+        <tr className={css.tableTr}>
+          <th className={css.mainTh}>Type</th>
+          <th className={css.mainTh}>Amount</th>
+          <th className={css.mainTh}>Currency</th>
+        </tr>
       </thead>
 
       {items.map(({ id, type, amount, currency }) => {
         return (
-          <tbody key={id}>
-            <th>{type}</th>
-            <th>{amount}</th>
-            <th>{currency}</th>
+          <tbody key={id} className={css.tableTbody}>
+            <tr className={css.tableTr}>
+              <th className={css.contentTh}>{type}</th>
+              <th className={css.contentTh}>{amount}</th>
+              <th className={css.contentTh}>{currency}</th>
+            </tr>
           </tbody>
         );
       })}
