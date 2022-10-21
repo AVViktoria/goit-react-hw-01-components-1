@@ -18,12 +18,13 @@
   border-right: 1px solid #343a45;
   font-size: 23px;
   font-weight: 100;
-  padding: 10px;
+  padding: 7px;
   text-align: center;
   /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
   vertical-align: middle;
 }
 .tableTr {
+  color: #282829;
   border-top: 1px solid #c1c3d1;
   border-bottom: 1px solid #c1c3d1;
   font-size: 16px;
