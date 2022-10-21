@@ -35,9 +35,6 @@ export default function App() {
         <div>
           <Statistics title="Upload stats" stats={data} />
         </div>
-        <div>
-          <Statistics stats={data} />
-        </div>
       </Section>
 
       <Section title={'Task-3 "Statistics"'}>
