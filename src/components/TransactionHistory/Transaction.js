@@ -30,10 +30,11 @@ export default function Transaction({ items }) {
 
 Transaction.propTypes = {
   items: PropTypes.arrayOf(
-    PropTypes.shape({
+    PropTypes.exact({
+      id: PropTypes.string,
       type: PropTypes.string,
-      amount: PropTypes.number,
-      currency: PropTypes.number,
+      amount: PropTypes.string,
+      currency: PropTypes.string,
     }).isRequired
   ),
 };
