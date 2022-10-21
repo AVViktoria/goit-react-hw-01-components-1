@@ -1,9 +1,12 @@
 import { React } from 'react';
-import PropTypes from 'prop-types'; // ES6
-// var PropTypes = require("prop-types"); // ES5 with npm
-import defaultImage from './default-avatar.jpg';
+import PropTypes from 'prop-types';
 import css from './Profile.module.css';
+
+//*  ..img
+import defaultImage from './default-avatar.jpg';
+//*    icons..
 import { TbAt } from 'react-icons/tb';
+import { iconSize } from 'constance';
 
 export default function Profile({
   avatar = defaultImage,
@@ -13,12 +16,12 @@ export default function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className={css.container}>
+    <div className={css.profile}>
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.name}>{username}</p>
         <p className={css.tag}>
-          <TbAt className={css.iconEmail} />
+          <TbAt className={css.iconEmail} size={iconSize.sm} />
           {tag}
         </p>
         <p className={css.location}>{location}</p>

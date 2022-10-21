@@ -2,6 +2,7 @@ import { React } from 'react';
 import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 import { FaRegSmile } from 'react-icons/fa';
+import { iconSize } from 'constance';
 
 export default function Friends({ friends }) {
   return (
@@ -13,7 +14,7 @@ export default function Friends({ friends }) {
               <span>
                 <FaRegSmile
                   className={isOnline ? css.status__true : css.status__false}
-                  size={18}
+                  size={iconSize.sm}
                 />
               </span>
 
