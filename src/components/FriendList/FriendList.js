@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 // import css from './FriendList.module.css';
 import { FaRegSmile } from 'react-icons/fa';
 import { iconSize } from 'constance';
+
 import {
   Card,
   FriendList,
@@ -19,9 +20,8 @@ export default function Friends({ friends }) {
         {friends.map(({ id, isOnline, name, avatar }) => {
           return (
             <ListItem key={id}>
-              <OnlineStatus>
+              <OnlineStatus type={isOnline}>
                 <FaRegSmile
-                  type={isOnline}
                   // className={isOnline ? css.status__true : css.status__false}
                   size={iconSize.sm}
                 />
@@ -35,7 +35,6 @@ export default function Friends({ friends }) {
     </Card>
   );
 }
-
 Friends.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({

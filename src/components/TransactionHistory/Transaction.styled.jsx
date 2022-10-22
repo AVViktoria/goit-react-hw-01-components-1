@@ -21,17 +21,17 @@ export const TableTr = styled.tr`
   font-size: 16px;
   font-weight: normal;
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
-:hover {
+&:hover {
    color: #f4f4f7;
    border-top: 1px solid #22262e;
    background-color: #6b74d0;
  }
 
- :first-child {
+ &:firstChild {
    border-top: none;
  }
 
- :last-child {
+ &:lastChild {
    border-bottom: 1px solid #b2b7c2;
  }
   `;
@@ -46,17 +46,20 @@ color: #d5dde5;
   text-align: center;
   
   vertical-align: middle;
-:first-child {
+&:firstChild {
    border-top-left-radius: 3px;
  }
 
-:last-child {
+&:lastChild {
    border-top-right-radius: 3px;
    border-right: none;
  }
 `;
+
+
+
 export const TableTbody = styled.tbody`
- :nth-child(2n) {
+&:nthChild(2n) {
   background-color: #a9a9d2;}
 `;
 
@@ -69,7 +72,7 @@ export const ContentTh = styled.th`
    border-right: 1px solid #c1c3d1;
  }
 
-:last-child {
+&:lastChild {
    border-right: 0px;
  }
 `;

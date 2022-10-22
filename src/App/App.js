@@ -1,19 +1,16 @@
 // import { React } from 'react';
 // import PropTypes from "prop-types";
 
-//* components
+//*    components    //
 import Section from '../components/Section/Section';
 import Profile from '../components/Profile/Profile';
 import user from '../DATA/user.json';
 import Statistics from '../components/Statistics/Statistics';
 import data from '../DATA/statistics.json';
-
 import FriendList from '../components/FriendList/FriendList';
 import friends from '../DATA/friends.json';
 import TransactionHistory from '../components/TransactionHistory/Transaction';
 import transactions from '../DATA/transactions.json';
-// import css from './App.module.css';
-// import { TbContainer } from 'react-icons/tb';
 
 export default function App() {
   return (
@@ -31,13 +28,13 @@ export default function App() {
         </div>
       </Section>
 
-      <Section title={'Task-2 "FriendList"'}>
+      <Section title={'Task-2 "Statistics"'}>
         <div>
           <Statistics title="Upload stats" stats={data} />
         </div>
       </Section>
 
-      <Section title={'Task-3 "Statistics"'}>
+      <Section title={'Task-3 "FriendList"'}>
         <div>
           <FriendList friends={friends} />
         </div>
