@@ -1,7 +1,7 @@
-.friends {
+/* .friends {
   display: grid;
-}
-.item {
+
+ .item {
   background-color: rgba(198, 196, 196, 0.8);
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
 
   width: 280px;
   padding: 1rem;
-  /* background-color: rgba(224, 223, 223, 0.996); */
+  
   box-shadow: 4px 4px 16px #e1e1e1, -2px -2px 16px #fff;
   border-radius: 2.5rem;
 }
@@ -21,7 +21,7 @@
   margin-right: 1rem;
   margin-left: 1rem;
 }
-.name {
+ .name {
   font-size: 20px;
   color: #191c1d;
 }
@@ -36,10 +36,8 @@
 
 .status__true {
   background-color: #74ee7e;
-  border-radius: 50%;
 }
 
 .status__false {
-  background-color: #f24343;
-  border-radius: 50%;
-}
+  background-color: ye #f24343;
+} */
