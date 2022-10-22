@@ -30,7 +30,7 @@ export const StatisticsItem = styled.li`
   padding: 20px;
 
   color: #fff;
-  background-color: #ccc;
+ background-color: #ccc;
   
 `;
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // import css from './Statistics.module.css';
 // import getRandomHexColor from 'utils/randomColor';
 
-import getRandomHexColor from 'utils';
+import { getRandomHexColor } from 'utils';
 
 //*    styles..//
 import {

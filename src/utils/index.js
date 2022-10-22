@@ -1,2 +1,2 @@
-export { default } from './randomColor';
+export * from './randomColor';
 export * from './setOnlineBcgColor';

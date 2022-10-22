@@ -1,3 +1,7 @@
-export default function getRandomHexColor() {
+// export default function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+// }
+
+export const getRandomHexColor = () => {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
+};

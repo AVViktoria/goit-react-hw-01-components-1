@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import setOnlineBcgColor from 'utils';
+import {setOnlineBcgColor} from 'utils';
 
 // export const Card = styled.div``;
 export const Card = styled.section`
