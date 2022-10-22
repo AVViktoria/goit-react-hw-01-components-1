@@ -1,5 +1,5 @@
-export const setOnlineBcgColor = props => {
-  switch (props.type) {
+export const setOnlineBcgColor = type => {
+  switch (type) {
     case 'true':
       return '#74ee7e';
     case 'false':

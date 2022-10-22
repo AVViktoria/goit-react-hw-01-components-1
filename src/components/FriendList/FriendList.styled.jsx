@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { setOnlineBcgColor } from 'utils';
+// import { setOnlineBcgColor } from 'utils';
 
 // const setOnlineBcgColor = props => {
 //   switch (props.type) {
