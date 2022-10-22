@@ -20,7 +20,7 @@ export default function Friends({ friends }) {
         {friends.map(({ id, isOnline, name, avatar }) => {
           return (
             <ListItem key={id}>
-              <OnlineStatus type={isOnline}>
+              <OnlineStatus typeName={isOnline}>
                 <FaRegSmile
                   // className={isOnline ? css.status__true : css.status__false}
                   size={iconSize.sm}

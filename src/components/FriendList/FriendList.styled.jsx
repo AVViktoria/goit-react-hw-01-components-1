@@ -1,17 +1,6 @@
 import styled from '@emotion/styled';
 // import { setOnlineBcgColor } from 'utils';
 
-// const setOnlineBcgColor = props => {
-//   switch (props.type) {
-//     case 'true':
-//       return '#74ee7e';
-//     case 'false':
-//       return '#f24343';
-//     default:
-//       return '#ffff00';
-//   }
-// };
-// export const Card = styled.div``;
 export const Card = styled.section`
 display: grid;
 `;
@@ -33,27 +22,11 @@ export const OnlineStatus = styled.span`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: ${({ type }) => {
-     return type ? 'green' : 'red';
+  background-color: ${({ typeName }) => {
+     return typeName ? 'green' : 'red';
    }};
- 
   `;
-
-//  background: ${(props) => {return(props.type ? 'red' : 'pink')}};
-
-// ${(props) => {
-//   console.log(props.type)
-// }}
-   
-//  background-color: ${({ props }) => {
-//     return props.type ? 'green' : 'red';
-//   }};
-
  //background-color: ${setOnlineBcgColor};
-  // 
-  
- 
-
 
 export const FriendImg = styled.img`
   margin-right: 10px;

@@ -4,7 +4,6 @@ export const TransactionContainer = styled.table`
   border-radius: 5px;
   border-collapse: collapse;
   height: 320px;
-
   max-width: 600px;
   padding: 5px;
   width: 100%;
@@ -27,11 +26,11 @@ export const TableTr = styled.tr`
    background-color: #6b74d0;
  }
 
- &:firstChild {
+ &:first-of-type {
    border-top: none;
  }
 
- &:lastChild {
+ &:last-of-type {
    border-bottom: 1px solid #b2b7c2;
  }
   `;
@@ -46,11 +45,11 @@ color: #d5dde5;
   text-align: center;
   
   vertical-align: middle;
-&:firstChild {
+&:first-of-type {
    border-top-left-radius: 3px;
  }
 
-&:lastChild {
+&:last-of-type {
    border-top-right-radius: 3px;
    border-right: none;
  }
@@ -59,7 +58,7 @@ color: #d5dde5;
 
 
 export const TableTbody = styled.tbody`
-&:nthChild(2n) {
+&:nth-of-type(2n) {
   background-color: #a9a9d2;}
 `;
 
@@ -72,7 +71,7 @@ export const ContentTh = styled.th`
    border-right: 1px solid #c1c3d1;
  }
 
-&:lastChild {
+&:last-of-type {
    border-right: 0px;
  }
 `;
