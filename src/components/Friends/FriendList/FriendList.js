@@ -1,33 +1,20 @@
 import { React } from 'react';
 import PropTypes from 'prop-types';
+import FriendListItem from '../FriendListItem/FriendListItem';
 // import css from './FriendList.module.css';
-import { FaRegSmile } from 'react-icons/fa';
-import { iconSize } from 'constance';
+// import { FaRegSmile } from 'react-icons/fa';
+// import { iconSize } from 'constance';
 
-import {
-  Card,
-  FriendList,
-  ListItem,
-  OnlineStatus,
-  FriendImg,
-  FriendName,
-} from './FriendList.styled';
+import { Card, FriendList, ListItem } from './FriendList.styled';
 
 export default function Friends({ friends }) {
   return (
     <Card>
       <FriendList>
-        {friends.map(({ id, isOnline, name, avatar }) => {
+        {friends.map(({ friend }) => {
           return (
-            <ListItem key={id}>
-              <OnlineStatus typeName={isOnline}>
-                <FaRegSmile
-                  // className={isOnline ? css.status__true : css.status__false}
-                  size={iconSize.sm}
-                />
-              </OnlineStatus>
-              <FriendImg src={avatar} alt="User avatar" width="48" />
-              <FriendName>{name}</FriendName>
+            <ListItem key={friend.id}>
+              <FriendListItem friend={friend} />
             </ListItem>
           );
         })}
@@ -38,12 +25,11 @@ export default function Friends({ friends }) {
 Friends.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
-      isOnline: PropTypes.bool,
-      name: PropTypes.string,
-      avatar: PropTypes.string,
-    }).isRequired
+      id: PropTypes.number.isRequired,
+    })
   ),
 };
+
 // export default function Friends({ friends }) {
 //   return (
 //     <section className={css.friends}>

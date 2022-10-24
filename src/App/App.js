@@ -7,8 +7,9 @@ import Profile from '../components/Profile/Profile';
 import user from '../DATA/user.json';
 import Statistics from '../components/Statistics/Statistics';
 import data from '../DATA/statistics.json';
-import FriendList from '../components/FriendList/FriendList';
+import FriendList from '../components/Friends/FriendList/FriendList';
 import friends from '../DATA/friends.json';
+// import FriendListItem from '../components/Friends/FriendListItem/FriendListItem';
 import TransactionHistory from '../components/TransactionHistory/Transaction';
 import transactions from '../DATA/transactions.json';
 

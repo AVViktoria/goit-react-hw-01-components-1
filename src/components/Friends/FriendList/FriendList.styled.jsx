@@ -17,27 +17,3 @@ export const ListItem = styled.li`  background-color: rgba(198, 196, 196, 0.8);
   box-shadow: 4px 4px 16px #e1e1e1, -2px -2px 16px #fff;
   border-radius: 2.5rem;`;
 
-export const OnlineStatus = styled.span`
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: ${({ typeName }) => {
-     return typeName ? 'green' : 'red';
-   }};
-  `;
- //background-color: ${setOnlineBcgColor};
-
-export const FriendImg = styled.img`
-  margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 1rem;
-  margin-left: 1rem;
-`;
-
-export const FriendName = styled.p`
-  font-size: 20px;
-  color: #191c1d;`;
-
