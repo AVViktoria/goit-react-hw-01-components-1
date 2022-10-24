@@ -6,7 +6,7 @@ export const OnlineStatus = styled.span`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  // background-color: ${({ typeName }) => {
+  background-color: ${({ typeName }) => {
      return typeName ? 'green' : 'red';
    }};
   `;
