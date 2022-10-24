@@ -5,7 +5,7 @@ export const Card = styled.section`
 display: grid;
 `;
 
-export const FriendList = styled.ul``;
+export const List = styled.ul``;
 
 export const ListItem = styled.li`  background-color: rgba(198, 196, 196, 0.8);
   display: flex;

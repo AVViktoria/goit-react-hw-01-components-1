@@ -5,24 +5,24 @@ import FriendListItem from '../FriendListItem/FriendListItem';
 // import { FaRegSmile } from 'react-icons/fa';
 // import { iconSize } from 'constance';
 
-import { Card, FriendList, ListItem } from './FriendList.styled';
+import { Card, List, ListItem } from './FriendList.styled';
 
-export default function Friends({ friends }) {
+export default function FriendList({ friends }) {
   return (
     <Card>
-      <FriendList>
-        {friends.map(({ friend }) => {
+      <List>
+        {friends.map(friend => {
           return (
             <ListItem key={friend.id}>
               <FriendListItem friend={friend} />
             </ListItem>
           );
         })}
-      </FriendList>
+      </List>
     </Card>
   );
 }
-Friends.propTypes = {
+FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
