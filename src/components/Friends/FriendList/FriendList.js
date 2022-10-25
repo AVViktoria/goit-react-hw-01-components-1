@@ -26,9 +26,21 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-    })
+    }).isRequired
   ),
 };
+
+//*   Also   work   propTypes   like   below   //
+// Friends.propTypes = {
+//   friends: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       isOnline: PropTypes.bool.isRequired,
+//       name: PropTypes.string.isRequired,
+//       avatar: PropTypes.string.isRequired,
+// id: PropTypes.string.isRequired,
+//     }).isRequired
+//   ).isRequired,
+// };
 
 // export default function Friends({ friends }) {
 //   return (
@@ -58,13 +70,3 @@ FriendList.propTypes = {
 //     </section>
 //   );
 // }
-
-// Friends.propTypes = {
-//   friends: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       isOnline: PropTypes.bool,
-//       name: PropTypes.string,
-//       avatar: PropTypes.string,
-//     }).isRequired
-//   ),
-// };
